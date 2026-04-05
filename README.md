@@ -29,7 +29,7 @@ A high-performance, web-based tool to visualize how **Dijkstra's Algorithm** cal
 
 | Before Visualization | After Visualization |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/8978ee1a-7174-42a1-b582-2f002b249165" width="400" /> | <img src="https://github.com/user-attachments/assets/3f40c8c0-06b6-4b5a-8f85-affcb56614b1" width="400" /> |
+| <img src="https://github.com/user-attachments/assets/8978ee1a-7174-42a1-b582-2f002b249165" width="400" /> | <img src="https://github.com/user-attachments/assets/b6c77b00-5900-46de-af03-fef74c17fb6c" width="400" /> |
 
 ---
 
