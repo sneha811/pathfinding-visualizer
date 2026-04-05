@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #0f172a;      /* Deep dark blue */   /* "--" - CSS Variables, can be used later by syntax var(variable_name)*/
+  --grid-border: #1e293b;   /* Slightly lighter blue */
+  --node-color: #1e293b;
+  --wall-color: #64748b;    /* Gray for walls */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#grid {
+  display: grid;
+  /* We remove 'gap' and 'background-color' here */
+  border: 1px solid #1e293b; 
+  /* This ensures the grid itself doesn't have extra padding */
+  padding: 0;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  background-color: var(--node-color);
+  /* Add a very thin, subtle border to every square */
+  border: 1px solid #0f172a;
+  /* This prevents double-thick borders between squares */
+  margin: -0.5px; 
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.node-visited {
+  transform: scale(0.9);
+  background-color: #60a5fa;
+}
+
+/* This class will be added by JS when we "paint" a wall */
+.node-wall {
+  background-color: var(--wall-color);
+  border-radius: 2px;
+}
+
+/*The Start node - (green)*/
+.node-start {
+  background-color: green !important;
+  border-radius: 50%;
+}
+
+/*The End node - (Red)*/
+.node-end {
+  background-color: red !important;
+  border-radius: 4px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3b82f6; /* Modern Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background 0.2s;
+}
+
+#clear-btn {
+  background-color: #475569; /* Slate Gray */
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+#status-display {
+  margin: 10px 0 20px 0;
+  padding: 15px;
+  background-color: #1e293b; /* Matches your grid border */
+  border-left: 4px solid #3b82f6; /* Blue "info" accent */
+  border-radius: 4px;
+  font-size: 15px;
+  color: #f8fafc;
+  max-width: 800px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Color Coding for the instructions */
+.text-start { color: #22c55e; font-weight: bold; }
+.text-end { color: #ef4444; font-weight: bold; }
+.text-path { color: #fbbf24; font-weight: bold; }

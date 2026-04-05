@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pathfinding Visualizer 2026</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Pathfinding Visualizer</h1>
+
+      <div id="status-display">
+        <p>1. 🟢 <strong>Drag the Circle</strong> to set your Start point.</p>
+        <p>2. 🟥 <strong>Drag the Square</strong> to set your Destination.</p>
+        <p>3. Click and Drag to <strong>Draw Walls</strong> and press <strong>Start</strong>!</p>
+      </div>
+
+      <div class="controls">
+        <button id="start-btn">Start Dijkstra</button>
+        <button id="clear-btn">Clear Board</button>
+      </div>
+      <div id="grid"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
