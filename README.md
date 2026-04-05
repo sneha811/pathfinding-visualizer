@@ -1,7 +1,6 @@
 # 📍 Pathfinding Visualizer (Dijkstra's Algorithm)
 
-**[🔗 View Live Demo](https://sneha811.github.io/pathfinding-visualizer/)** | **[📂 Source Code](https://github.com/sneha811/pathfinding-visualizer)**
-
+**[🔗 View Live Demo](https://sneha811.github.io/pathfinding-visualizer/)**
 ---
 A high-performance, web-based tool to visualize how **Dijkstra's Algorithm** calculates the shortest path between two points. 
 Built with a focus on smooth UI/UX and efficient data structures.
